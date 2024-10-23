@@ -43,6 +43,12 @@ p
   font-size: 20px;
 }
 
+pi
+{
+  font-size: 20px;
+  font-style: italic;
+}
+
 a:link
 {
   color: #999999;
