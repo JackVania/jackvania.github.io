@@ -18,10 +18,18 @@ h1
   line-height: 0;
 }
 
+gametitle
+{
+  font-size: 48px;
+  font-weight: bold;
+  color: brown;
+  /* text-align: right; */
+}
+
 body
 {
-  background: #eeeeee;
-  color: #242424;
+  color: #eeeeee;
+  background: #101010;
 }
 
 *
@@ -58,6 +66,11 @@ a:hover
 img
 {
   width: 100%;
+}
+
+img2
+{
+  width: 50%;
 }
 
 .ytvideo
