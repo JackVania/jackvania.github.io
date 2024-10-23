@@ -6,6 +6,15 @@
   line-height: 1.8;
 }
 
+.top
+{
+  max-width: 780px;
+  margin: auto;
+  padding: 6px;
+  line-height: 1.8;
+  padding-top: 20px;
+}
+
 @font-face
 {
    font-family: mainFont;
