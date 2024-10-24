@@ -1,3 +1,8 @@
+.copyright:before
+{
+  content: "© 2014-2024 Jack Vania";
+}
+
 .content
 {
   max-width: 780px;
