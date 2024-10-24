@@ -110,6 +110,24 @@ a:hover
   border: none;
 }
 
+/* Dashed border */
+hr.dashed
+{
+  border-top: 3px dashed var(--vaniaText);
+}
+
+/* Dotted border */
+hr.dotted
+{
+  border-top: 3px dotted var(--vaniaText);
+}
+
+/* Solid border */
+hr.solid
+{
+  border-top: 3px solid var(--vaniaText);
+}
+
 /* BLOOD AND BEASTS GAME PAGE */
 #body2
 {
