@@ -15,10 +15,31 @@
   padding-top: 20px;
 }
 
+.justify
+{
+  max-width: 780px;
+  margin: auto;
+  padding: 6px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+:root
+{
+  --vaniaBg: #eeeeee;
+  --vaniaText: #242424;
+  --vaniaLink: #999999;
+
+  --bnbBg: #0d0c0f;
+  --bnbText: #eeeeee;
+  --bnbLink: #cf5151;
+  --bnbTitle: #b52d2d;
+}
+
 body
 {
-  background: #eeeeee;
-  color: #242424;
+  background: var(--vaniaBg);
+  color: var(--vaniaText);
 }
 
 @font-face
@@ -56,21 +77,21 @@ img
 
 a:link
 {
-  color: #999999;
+  color: var(--vaniaLink);
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited
 {
-  color: #999999;
+  color: var(--vaniaLink);
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover
 {
-  color: #999999;
+  color: var(--vaniaLink);
   background-color: transparent;
   text-decoration: underline;
 }
@@ -80,4 +101,46 @@ a:hover
   aspect-ratio: 16/9;
   width: 100%;
   border: none;
+}
+
+/* BLOOD AND BEASTS GAME PAGE */
+#body2
+{
+  color: var(--bnbText);
+  background: var(--bnbBg);
+}
+
+.topTitle
+{
+  text-align: center;
+  line-height: 1.8;
+  padding-top: 20px;
+}
+
+gametitle
+{
+  font-size: 54px;
+  font-weight: bold;
+  color: var(--bnbTitle);
+}
+
+a.bnb:link
+{
+  color: var(--bnbLink);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a.bnb:visited
+{
+  color: var(--bnbLink);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a.bnb:hover
+{
+  color: var(--bnbLink);
+  background-color: transparent;
+  text-decoration: underline;
 }
