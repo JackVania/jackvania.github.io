@@ -1,3 +1,17 @@
+:root
+{
+  --vaniaWidth: 780px;
+  --vaniaBg: #eeeeee;
+  --vaniaText: #242424;
+  --vaniaLink: #999999;
+
+  --bnbWidth: 960px;
+  --bnbBg: #0d0c0f;
+  --bnbText: #eeeeee;
+  --bnbLink: #cf5151;
+  --bnbTitle: #b52d2d;
+}
+
 .copyright:before
 {
   content: "© 2014-2024 Jack Vania";
@@ -5,7 +19,7 @@
 
 .content
 {
-  max-width: 780px;
+  max-width: var(--vaniaWidth);
   margin: auto;
   padding: 6px;
   line-height: 1.8;
@@ -18,23 +32,11 @@
 
 .justify
 {
-  max-width: 780px;
+  max-width: var(--vaniaWidth);
   margin: auto;
   padding: 6px;
   line-height: 1.8;
   text-align: justify;
-}
-
-:root
-{
-  --vaniaBg: #eeeeee;
-  --vaniaText: #242424;
-  --vaniaLink: #999999;
-
-  --bnbBg: #0d0c0f;
-  --bnbText: #eeeeee;
-  --bnbLink: #cf5151;
-  --bnbTitle: #b52d2d;
 }
 
 body
@@ -150,4 +152,21 @@ a.bnb:hover
   color: var(--bnbLink);
   background-color: transparent;
   text-decoration: underline;
+}
+
+.contentbnb
+{
+  max-width: var(--bnbWidth);
+  margin: auto;
+  padding: 6px;
+  line-height: 1.8;
+}
+
+.justifybnb
+{
+  max-width: var(--bnbWidth);
+  margin: auto;
+  padding: 6px;
+  line-height: 1.8;
+  text-align: justify;
 }
