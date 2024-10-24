@@ -6,19 +6,30 @@
   line-height: 1.8;
 }
 
-.justify
+.top
 {
   max-width: 780px;
   margin: auto;
   padding: 6px;
   line-height: 1.8;
-  text-align: justify;
+  padding-top: 20px;
+}
+
+body
+{
+  background: #eeeeee;
+  color: #242424;
 }
 
 @font-face
 {
    font-family: mainFont;
-   src: url(./font/jbm.ttf);
+   src: url(../font/jbm.ttf);
+}
+
+*
+{
+   font-family: mainFont;
 }
 
 h1
@@ -27,27 +38,20 @@ h1
   line-height: 0;
 }
 
-gametitle
-{
-  font-size: 54px;
-  font-weight: bold;
-  color: brown;
-}
-
-body
-{
-  color: #eeeeee;
-  background: #0c0c0c;
-}
-
-*
-{
-   font-family: mainFont;
-}
-
 p
 {
   font-size: 20px;
+}
+
+pi
+{
+  font-size: 20px;
+  font-style: italic;
+}
+
+img
+{
+  width: 100%;
 }
 
 a:link
@@ -71,26 +75,9 @@ a:hover
   text-decoration: underline;
 }
 
-img
-{
-  width: 100%;
-}
-
-img2
-{
-  width: 50%;
-}
-
 .ytvideo
 {
   aspect-ratio: 16/9;
   width: 100%;
   border: none;
-}
-
-.topTitle
-{
-  text-align: center;
-  line-height: 1.8;
-  padding-top: 20px;
 }
