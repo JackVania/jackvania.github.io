@@ -1,9 +1,10 @@
 :root
 {
+  --vaniaLight: #666666;
   --vaniaWidth: 780px;
   --vaniaBg: #eeeeee;
   --vaniaText: #242424;
-  --vaniaLink: #999999;
+  --vaniaLink: #2a86d1;
 
   --bnbWidth: 960px;
   --bnbBg: #0d0c0f;
@@ -22,7 +23,7 @@
   max-width: var(--vaniaWidth);
   margin: auto;
   padding: 6px;
-  line-height: 1.8;
+  line-height: 1.4;
 }
 
 .top
@@ -37,6 +38,11 @@
   padding: 6px;
   line-height: 1.8;
   text-align: justify;
+}
+
+.light
+{
+  color: var(--vaniaLight);
 }
 
 body
@@ -159,7 +165,7 @@ a.bnb:hover
   max-width: var(--bnbWidth);
   margin: auto;
   padding: 6px;
-  line-height: 1.8;
+  line-height: 1.4;
 }
 
 .justifybnb
@@ -167,6 +173,6 @@ a.bnb:hover
   max-width: var(--bnbWidth);
   margin: auto;
   padding: 6px;
-  line-height: 1.8;
+  line-height: 1.4;
   text-align: justify;
 }
