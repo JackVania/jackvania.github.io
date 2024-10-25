@@ -45,6 +45,14 @@
   color: var(--vaniaLight);
 }
 
+.code
+{
+  color: rgb(161, 73, 196);
+  background-color: #cdcdcd;
+  padding: 10px;
+  font-size: 110%;
+}
+
 body
 {
   background: var(--vaniaBg);
