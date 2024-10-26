@@ -22,16 +22,16 @@
 <div class="content">
   <h2>Using Curves to Manipulate Variables</h2>
   <pi class="light">October 26, 2024</pi><br><br>
+</div>
+
+<div class="content">
   <p>
     Curves are a great tool to help you visually manipulate variables over time, implement diminishing returns or anything you can think of where you need easing profiles for vectors, floats, etc.
   </p><p>
-    Ex: You are looking to create a curve to ease out movement in a LERP in a grid-based RPG. First we must create the reference for the curve we can use in the inspector of our editor:
+    Ex: You are looking to create a curve to ease out movement in a LERP for grid-based movement. First we must create the reference for the Curve we can use in the inspector:
   </p>
 
-  <pi class="light">Unity</pi>
-  <p class="code">[SerializeField] AnimationCurve moveCurve;</p>
-
-  <pi class="light">Godot</pi>
+  <pi class="light">GDScript</pi>
   <p class="code">@export var moveCurve : Curve</p>
 
   <p>
@@ -46,20 +46,14 @@
     To get the value we simply call:
   </p>
 
-  <pi class="light">Unity</pi>
-  <p class="code">float value = moveCurve.evaluate(0.5f);</p>
-
-  <pi class="light">Godot</pi>
+  <pi class="light">GDScript</pi>
   <p class="code">var value = moveCurve.sample(0.5)</p>
 
   <p>
-    In our movement example, if we are LERPing a position over 1 second, we simply sample or evaluate the current position (current time) of our LERP through the curve.
+    In our movement example, if we are LERPing a position over 1 second, we simply sample the current position (current time) of our LERP through the curve.
   </p>
 
-  <pi class="light">Unity</pi>
-  <p class="code">position = Vector2.Lerp(startPosition, endPosition, moveCurve.evaluate(lerpPosition))</p>
-
-  <pi class="light">Godot</pi>
+  <pi class="light">GDScript</pi>
   <p class="code">position = lerp(startPosition, endPosition, moveCurve.sample(lerpPosition))</p>
 
   <p>
