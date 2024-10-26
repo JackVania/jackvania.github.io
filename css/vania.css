@@ -73,21 +73,25 @@ body
 h1
 {
   font-size: 28px;
-  line-height: 0;
+  line-height: 1.4;
+  margin-top: 0px;
+  margin-bottom: 0px;
   word-wrap: normal;
 }
 
 h2
 {
   font-size: 24px;
-  line-height: 0;
+  line-height: 1.4;
   margin-top: 20px;
+  margin-bottom: 0px;
+  word-wrap: normal;
 }
 
 p
 {
   font-size: 20px;
-  margin-top: 0%;
+  margin-top: 0px;
 }
 
 pi
