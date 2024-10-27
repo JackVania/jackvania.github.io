@@ -1,0 +1,1 @@
+Hey! I'm Jack Vania, game developer, programmer and artist. This repositoryis my website and I'm learnign as I go! It's simple HTML because I don't care or need any CMS and HTML is generally quick when it's simple. I will make silly mistakes as I go but hey, I'm learning about HTML!
