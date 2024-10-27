@@ -13,74 +13,78 @@
 </head>
 <body>
 
-<div class="content">
-  <p class="topnav"><span class="navdivider"></span><a href="../index.html">HOME</a><span class="navdivider"><a href="../resources.html">RESOURCES</a><span class="navdivider"><a href="../blog.html">BLOG</a></p>
-  <h1>Jack Vania</h1>
-  <p><a href="../resources.html"><:: BACK</a></p>
-</div>
+<div class="main">
 
-<!-- Article -->
-<div class="content">
-  <h2>Using Curves to Manipulate Variables</h2>
-  <pi class="light">October 26, 2024</pi><br><br>
-</div>
+  <div class="content">
+    <p class="topnav"><span class="navdivider"></span><a href="../index.html">HOME</a><span class="navdivider"><a href="../resources.html">RESOURCES</a><span class="navdivider"><a href="../blog.html">BLOG</a></p>
+    <h1>Jack Vania</h1>
+    <p><a href="../resources.html"><:: BACK</a></p>
+  </div>
 
-<div class="content">
-  <p>
-    Curves are a great tool to help you visually manipulate variables over time, implement diminishing returns or anything you can think of where you need easing profiles for vectors, floats, etc.
-  </p><p>
-    Ex: You are looking to create a curve to ease out movement in a LERP for grid-based movement. First we must create the reference for the Curve we can use in the inspector:
-  </p>
+  <!-- Article -->
+  <div class="content">
+    <h2>Using Curves to Manipulate Variables</h2>
+    <pi>October 26, 2024</pi><br><br>
+  </div>
 
-  <pi class="light">GDScript</pi>
-  <p class="code">@export var moveCurve : Curve</p>
+  <div class="content">
+    <p>
+      Curves are a great tool to help you visually manipulate variables over time, implement diminishing returns or anything you can think of where you need easing profiles for vectors, floats, etc.
+    </p><p>
+      Ex: You are looking to create a curve to ease out movement in a LERP for grid-based movement. First we must create the reference for the Curve we can use in the inspector:
+    </p>
 
-  <p>
-    This creates an inspector component we can visually edit to represent our curve. Here we see the starting value of 0 (bottom left) and a final value of 1 (top right). The X axis represents the point along the curve we wish to get and the Y axis represents the return value. In the image below we see that an X value of 0.5 would return 0.85 on the Y axis.
-  </p>
-</div>
-  
-<div class="content"><img src="./images/moveCurve.jpg"></div>
+    <pi>GDScript</pi>
+    <p class="code">@export var moveCurve : Curve</p>
 
-<div class="content">
-  <p>
-    To get the value we simply call:
-  </p>
+    <p>
+      This creates an inspector component we can visually edit to represent our curve. Here we see the starting value of 0 (bottom left) and a final value of 1 (top right). The X axis represents the point along the curve we wish to get and the Y axis represents the return value. In the image below we see that an X value of 0.5 would return 0.85 on the Y axis.
+    </p>
+  </div>
+    
+  <div class="content"><img src="./images/moveCurve.jpg"></div>
 
-  <pi class="light">GDScript</pi>
-  <p class="code">var value = moveCurve.sample(0.5)</p>
+  <div class="content">
+    <p>
+      To get the value we simply call:
+    </p>
 
-  <p>
-    In our movement example, if we are LERPing a position over 1 second, we simply sample the current position (current time) of our LERP through the curve.
-  </p>
+    <pi>GDScript</pi>
+    <p class="code">var value = moveCurve.sample(0.5)</p>
 
-  <pi class="light">GDScript</pi>
-  <p class="code">position = lerp(startPosition, endPosition, moveCurve.sample(lerpPosition))</p>
+    <p>
+      In our movement example, if we are LERPing a position over 1 second, we simply sample the current position (current time) of our LERP through the curve.
+    </p>
 
-  <p>
-    We can also use this to give us diminishing returns on a health value as the player levels. Perhaps you want the player to get more health early on and less health as they increase the health value with each level. If we know the player's starting health at level 0 and max health at max level 20 (actual value 19), we can create a simple formula for getting health values. We can set our minimum Y value at 0 on the X axis to 20hp for starting health and maximum Y value at 1 on the X axis to 100hp.
-  </p>
-  <p>
-    If we start at level 0 and sample the curve at 0/19 we will get our starting value of 20 health. If we sample at max level (19/19) this will return the maximum value of the curve, 100 health.</p>
-  <p>
-    Now if we change the curve from linear to easing as we used in the above image, the higher the player level, the less health they will gain for each level until maximum health is reached.
-  </p>
-  <p>
-    This is a very fast approach to manipulating variables without having to write mathematical formulas for diminishing or exponential returns.
-  </p>
-</div>
+    <pi>GDScript</pi>
+    <p class="code">position = lerp(startPosition, endPosition, moveCurve.sample(lerpPosition))</p>
 
-<!-- Back -->
-<div class="content"><p><a href="../resources.html"><:: BACK</a></p></div>
-<div class="content"><p><hr></p></div>
+    <p>
+      We can also use this to give us diminishing returns on a health value as the player levels. Perhaps you want the player to get more health early on and less health as they increase the health value with each level. If we know the player's starting health at level 0 and max health at max level 20 (actual value 19), we can create a simple formula for getting health values. We can set our minimum Y value at 0 on the X axis to 20hp for starting health and maximum Y value at 1 on the X axis to 100hp.
+    </p>
+    <p>
+      If we start at level 0 and sample the curve at 0/19 we will get our starting value of 20 health. If we sample at max level (19/19) this will return the maximum value of the curve, 100 health.</p>
+    <p>
+      Now if we change the curve from linear to easing as we used in the above image, the higher the player level, the less health they will gain for each level until maximum health is reached.
+    </p>
+    <p>
+      This is a very fast approach to manipulating variables without having to write mathematical formulas for diminishing or exponential returns.
+    </p>
+  </div>
 
-<!-- Footer -->
-<div class="content">
-  <p>
-    <span class="copyright"></span><br>
-    All Rights Reserved<br>
-    <a href="https://jackvania.com">jackvania.com</a>
-  </p>
+  <!-- Back -->
+  <div class="content"><p><a href="../resources.html"><:: BACK</a></p></div>
+  <div class="content"><p><hr></p></div>
+
+  <!-- Footer -->
+  <div class="content">
+    <p>
+      <span class="copyright"></span><br>
+      All Rights Reserved<br>
+      <a href="https://jackvania.com">jackvania.com</a>
+    </p>
+  </div>
+
 </div>
 
 </body>

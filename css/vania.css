@@ -1,7 +1,7 @@
 :root
 {
-  --vaniaLight: #666666;
   --vaniaWidth: 780px;
+  --vaniaLight: #666666;
   --vaniaBg: #eeeeee;
   --vaniaText: #242424;
   --vaniaLink: #2a86d1;
@@ -11,6 +11,19 @@
   --bnbText: #eeeeee;
   --bnbLink: #cf5151;
   --bnbTitle: #b52d2d;
+
+  --toppadding: 2px;
+}
+
+.main
+{
+  max-width: var(--vaniaWidth);
+  margin: auto;
+  line-height: 1.4;
+  padding: 8px;
+  font-size: 20px;
+  word-wrap: normal;
+  font-family: mainFont;
 }
 
 .copyright::before
@@ -25,50 +38,26 @@
 
 .content
 {
-  max-width: var(--vaniaWidth);
-  margin: auto;
-  padding: 6px;
-  line-height: 1.4;
+  padding-top: var(--toppadding);
 }
 
 .topnav
 {
   font-weight: bold;
-  font-size: 20px;
   padding-bottom: 16px;
-}
-
-.top
-{
-  padding-top: 10px;
 }
 
 .justify
 {
-  max-width: var(--vaniaWidth);
-  margin: auto;
-  padding: 6px;
-  line-height: 1.8;
   text-align: justify;
-}
-
-.light
-{
-  color: var(--vaniaLight);
 }
 
 .code
 {
   color: rgb(161, 73, 196);
   background-color: #cdcdcd;
-  padding: 10px;
+  padding: 12px;
   font-size: 110%;
-}
-
-body
-{
-  background: var(--vaniaBg);
-  color: var(--vaniaText);
 }
 
 @font-face
@@ -77,46 +66,34 @@ body
    src: url(../font/jbm.ttf);
 }
 
-*
+body
 {
-   font-family: mainFont;
+  background: var(--vaniaBg);
+  color: var(--vaniaText);
 }
 
 h1
 {
   font-size: 28px;
-  line-height: 1.4;
-  margin-top: 0px;
   margin-bottom: 0px;
-  word-wrap: normal;
 }
 
 h2
 {
   font-size: 24px;
-  line-height: 1.4;
-  margin-top: 20px;
   margin-bottom: 0px;
-  word-wrap: normal;
 }
 
 p
 {
-  font-size: 20px;
   margin-top: 0px;
 }
 
 pi
 {
-  font-size: 20px;
+  margin-top: 0px;
   font-style: italic;
-}
-
-pb
-{
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 0%;
+  color: var(--vaniaLight);
 }
 
 img
