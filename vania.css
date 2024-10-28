@@ -20,12 +20,6 @@
   margin-bottom: 60px;
 }
 
-.images
-{
-    max-width: var(--vaniaWidth);
-    padding: 16px;
-}
-
 .light
 {
     color: var(--vaniaLight);
@@ -54,7 +48,10 @@ p
 
 img
 {
-  width: 100%;
+    width: 100%;
+    max-width: var(--vaniaWidth);
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 a:link
