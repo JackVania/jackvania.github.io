@@ -35,6 +35,11 @@
     content: "© 2014-2024 Jack Vania";
 }
 
+.slug::before
+{
+    content: "game developer";
+}
+
 @font-face
 {
    font-family: mainFont;
