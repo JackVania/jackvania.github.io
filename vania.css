@@ -8,6 +8,7 @@
   --vaniaLink: #2a86d1;
 
   --anchorPadding: 20px;
+
   background-color: var(--vaniaBg);
   color: var(--vaniaText);
   font-size: 20px;
@@ -43,7 +44,7 @@
 @font-face
 {
    font-family: mainFont;
-   src: url(../font/jbm.ttf);
+   src: url(./font/jbm.ttf);
 }
 
 p
