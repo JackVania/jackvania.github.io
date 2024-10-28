@@ -1,0 +1,125 @@
+:root
+{
+  --vaniaWidth: 780px;
+  --vaniaLight: #666666;
+  --vaniaLightest: #b5b5b5;
+  --vaniaBg: #e0e0e0;
+  --vaniaText: #282a36;
+  --vaniaLink: #2a86d1;
+
+  --anchorPadding: 20px;
+  background-color: var(--vaniaBg);
+  color: var(--vaniaText);
+  font-size: 20px;
+  font-family: mainFont;
+}
+
+.main
+{
+  margin-bottom: 60px;
+}
+
+.images
+{
+    max-width: var(--vaniaWidth);
+    padding: 16px;
+}
+
+.light
+{
+    color: var(--vaniaLight);
+}
+
+.lightest
+{
+    color: var(--vaniaLightest);
+}
+
+.copyright::before
+{
+    content: "© 2014-2024 Jack Vania";
+}
+
+@font-face
+{
+   font-family: mainFont;
+   src: url(../font/jbm.ttf);
+}
+
+p
+{
+    line-height: .6;
+}
+
+img
+{
+  width: 100%;
+}
+
+a:link
+{
+  color: var(--vaniaLink);
+  text-decoration: none;
+}
+
+a:visited
+{
+  color: var(--vaniaLink);
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: var(--vaniaLink);
+  text-decoration: underline;
+}
+
+.outside
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+}
+  
+.inside
+{
+    margin: auto;
+}
+
+.element
+{
+    position: fixed;
+    inset: 0px;
+    margin: auto;
+    max-width: var(--vaniaWidth);
+}
+
+.elementArt
+{
+    inset: 0px;
+    margin: auto;
+    max-width: var(--vaniaWidth);
+}
+
+.textLarge
+{
+    font-size: 120%;
+}
+
+.anchorTop
+{
+    top: var(--anchorPadding);
+    position:fixed;
+    width:100%;
+    left: 0px;
+}
+
+.anchorBottom
+{
+    padding-bottom: var(--anchorPadding);
+    position:fixed;
+    width:100%;
+    bottom:0px;
+    left:0px;
+}
