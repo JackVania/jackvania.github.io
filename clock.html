@@ -7,10 +7,34 @@
 <link rel="stylesheet" href="reset.css">
 <link rel="stylesheet" href="vania.css">
 
-<title>Jack Vania: Fun</title>
+<title>Jack Vania: Clock</title>
 <meta name="description" content="Jack Vania is a game developer, programmer and artist.">
 <meta name="keywords" content="game development, programming, pixel art, video games">
 <meta name="author" content="Jack Vania">
+
+<script>
+// TIME SCRIPT
+    const timeDiv = document.getElementById("time");
+
+    function updateTime()
+    {
+    const now = new Date();
+    const formattedTime = now.toLocaleTimeString(); //with seconds
+    // const formattedTime = now.toLocaleTimeString([], {timeStyle: 'short'}); //no seconds
+    document.querySelector('#time').textContent = formattedTime;
+    }
+    setInterval(updateTime, 1000);
+// TIME SCRIPT
+</script>
+
+<style>
+.clockness
+{
+    font-size: 48px;
+    font-weight: bold;
+}
+</style>
+
 </head>
 <body class="element">
 <div class="outside">
@@ -22,8 +46,9 @@
     </div>
 
     <div class="inside">
-        <p>[ <a href="https://github.com/JackVania/BrowswerTab" target="_blank">github home tab</a> ]</p>
-        <p>[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="clock.html">clock</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</p>
+        <!-- TIME DISPLAY -->
+        <div class="clockness"><span id="time"></span></div>
+        <!-- TIME DISPLAY -->
     </div>
 
     <div class="anchorBottom light">
