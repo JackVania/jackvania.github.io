@@ -1,6 +1,6 @@
 :root
 {
-  --vaniaWidth: 780px;
+  --vaniaWidth: 900px;
   --vaniaLight: #666666;
   --vaniaLightest: #b5b5b5;
   --vaniaBg: #e0e0e0;
@@ -13,6 +13,7 @@
   color: var(--vaniaText);
   font-size: 22px;
   font-family: mainFont;
+  line-height: .6;
 }
 
 .main
@@ -46,17 +47,13 @@
    src: url(./font/jbm.ttf);
 }
 
-p
-{
-    line-height: .6;
-}
-
 img
 {
     width: 100%;
     max-width: var(--vaniaWidth);
     padding-left: 4px;
     padding-right: 4px;
+    padding-top: 4px;
 }
 
 a:link
