@@ -23,7 +23,7 @@
     // const formattedTime = now.toLocaleTimeString([], {timeStyle: 'short'}); //no seconds
     document.querySelector('#time').textContent = formattedTime;
     }
-    setInterval(updateTime, 100);
+    setInterval(updateTime, 1000);
 // TIME SCRIPT
 </script>
 
@@ -36,7 +36,7 @@
 </style>
 
 </head>
-<body class="element">
+<body class="element" onload="updateTime()">
 <div class="outside">
 
     <div class="anchorTop">
