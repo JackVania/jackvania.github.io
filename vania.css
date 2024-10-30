@@ -3,9 +3,16 @@
   --vaniaWidth: 900px;
   --vaniaLight: #666666;
   --vaniaLightest: #b5b5b5;
+  --vaniaLink: #2a86d1;
+
+
+  /* Light */
   --vaniaBg: #e0e0e0;
   --vaniaText: #282a36;
-  --vaniaLink: #2a86d1;
+
+  /* Dark */
+  /* --vaniaBg: #1e1f28;
+  --vaniaText: #e9e9e4; */
 
   --anchorPadding: 20px;
 
@@ -31,14 +38,19 @@
     color: var(--vaniaLightest);
 }
 
-.copyright::before
-{
-    content: "© 2014-2024 Jack Vania";
-}
-
 .slug::before
 {
     content: "game developer";
+}
+
+.message::before
+{
+    content: "c:business[at]url";
+}
+
+.copyright::before
+{
+    content: "© 2024 Jack Vania";
 }
 
 @font-face
