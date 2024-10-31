@@ -6,12 +6,13 @@
   --vaniaLink: #2a86d1;
 
   /* Light */
-  --vaniaBg: #e0e0e0;
-  --vaniaText: #474c6e;
+  /* --vaniaBg: #e0e0e0;
+  --vaniaText: #474c6e; */
 
   /* Dark */
-  /* --vaniaBg: #1e1f28;
-  --vaniaText: #e9e9e4; */
+  /* --vaniaBg: #1e1f28; */
+  --vaniaBg: #16171d;
+  --vaniaText: #e9e9e4;
 
   background-color: var(--vaniaBg);
   color: var(--vaniaText);
@@ -61,7 +62,7 @@ a:hover
 
 .divPad
 {
-    --pad: 20px;
+    --pad: 6px;
     padding-top: var(--pad);
     padding-bottom: var(--pad);
 }
