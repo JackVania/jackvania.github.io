@@ -10,8 +10,8 @@
   --linkCol: #2a86d1;
 
   background-color: var(--backgroundCol);
-  color: var(--textCol);
-  font-size: 22px;
+    color: var(--textCol);
+    font-size: 22px;
   font-family: mainFont;
 }
 
@@ -117,9 +117,24 @@ a:hover
 .topTitle
 {
   text-align: center;
-  line-height: 1.8;
-  padding-top: 32px;
+  font-size: 72px;
+  line-height: 1.4;
+
   padding-bottom: 32px;
+  padding-top: 32px;
+
+  /* padding: 64px; */
+  background-color: var(--textCol);
+}
+
+.findUs
+{
+  text-align: center;
+  line-height: 1.4;
+  font-size: 72px;
+  font-weight: bold;
+
+  padding: 32px;
   background-color: var(--textCol);
 }
 
@@ -210,4 +225,37 @@ a.bnb:hover
 .yellowText
 {
   color: var(--yellowCol);
+}
+
+.bottomPad
+{
+  padding-bottom: 32px;
+}
+
+/* for swapping images based on mobile */
+.image-gallery
+{
+  position: relative;
+}
+
+.image-gallery img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mobile-image
+{
+  display: none;
+}
+
+@media only screen and (max-width: 768px)
+{
+  .image-gallery img:first-child {
+    display: none;
+  }
+  .mobile-image {
+    display: block;
+  }
 }
