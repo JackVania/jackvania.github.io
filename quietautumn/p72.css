@@ -25,11 +25,11 @@
   font-family: mainFont;
 }
 
-/* @font-face
+@font-face
 {
    font-family: mainFont;
-   src: url(./fonts/ptr.ttf);
-} */
+   src: url(./fonts/bask.ttf);
+}
 
 body
 {
@@ -101,7 +101,7 @@ a:hover
 maintitle
 {
   font-size: 52px;
-  font-weight:bold;
+  /* font-weight:bold; */
 }
 
 .justify
