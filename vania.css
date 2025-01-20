@@ -1,7 +1,7 @@
 :root
 {
   --toppadding: 2px;
-  --vaniaWidth: 780px;
+  --vaniaWidth: 680px;
   --vaniaLight: #666666;
   --vaniaLink: #2a86d1;
 
@@ -24,7 +24,7 @@
   padding-left: 18px;
   padding-right: 18px;
   line-height: 1.4;
-  font-size: 18px;
+  font-size: 20px;
   font-family: mainFont;
   /* word-wrap: normal; */
 }
@@ -53,13 +53,13 @@ body
 
 h1
 {
-  font-size: 24px;
+  font-size: 126%;
   margin-bottom: 0px;
 }
 
 h2
 {
-  font-size: 22px;
+  font-size: 110%;
   margin-bottom: 0px;
 }
 
