@@ -1,10 +1,13 @@
 :root
 {
-  --fontSize: 22px;
-  --toppadding: 4px;
   --vaniaWidth: 800px;
+  --fontSize: 22px;
+  --fontSizeSmall: 86%;
+  --toppadding: 4px;
   --vaniaLight: #666666;
   --vaniaLink: #2a86d1;
+
+  --vaniaTextLight: #909097;
 
   /* Light */
   --vaniaBg: #e0e0e0;
@@ -19,7 +22,7 @@
 {
   .topSpacer
   {
-    padding-top: 40px;
+    padding-top: 20px;
   }
 }
 
@@ -27,7 +30,7 @@
 {
   .topSpacer
   {
-     padding-top: var(--toppadding);
+     padding-top: 0px;
   }
 }
 
@@ -43,9 +46,14 @@
   font-family: mainFont;
 }
 
-.content
+.newBlock
 {
-  padding-top: var(--toppadding);
+  padding-top: 24px;
+}
+
+light
+{
+  color: var(--vaniaTextLight);
 }
 
 @font-face
@@ -62,14 +70,19 @@ body
 
 h1
 {
-  font-size: 140%;
+  font-size: 200%;
   margin-bottom: 0px;
 }
 
 h2
 {
-  font-size: 110%;
+  font-size: 140%;
   margin-bottom: 0px;
+}
+
+smallFont
+{
+  font-size: var(--fontSizeSmall);
 }
 
 p
