@@ -3,11 +3,10 @@
   --siteWidth: 1000px;
   --toppadding: 2px;
 
-  --backgroundCol: #0b0b0b;
+  --backgroundCol: #000000;
   --textCol: #e6e6e6;
-  --yellowCol: #fff505;
-  --redCol: #b52d2d;
-  --linkCol: #b52d2d;
+  --titleCol: #08e0ce;
+  --linkCol: #b52d6a;
 
   background-color: var(--backgroundCol);
   color: var(--textCol);
@@ -28,7 +27,7 @@
 @font-face
 {
    font-family: mainFont;
-   src: url(./fonts/bask.ttf);
+   src: url(./fonts/jbm.ttf);
 }
 
 body
@@ -98,6 +97,30 @@ a:hover
   background-color: black;
 }
 
+.center
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* line-height: 1.2em; */
+}
+
+htemp
+{
+  font-size: 300%;
+  font-weight: bold;
+  color: var(--titleCol);
+}
+
+.centTemp
+{
+  text-align: center;
+  line-height: 1;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
+}
+
 maintitle
 {
   font-size: 52px;
@@ -119,11 +142,6 @@ maintitle
   line-height: 1.8;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-redText
-{
-  color: var(--redCol);
 }
 
 pw
