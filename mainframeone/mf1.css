@@ -27,7 +27,7 @@
 @font-face
 {
    font-family: mainFont;
-   src: url(./font/jbm.ttf);
+   src: url(../font/jbm.ttf);
 }
 
 body
@@ -108,7 +108,7 @@ a:hover
 
 htemp
 {
-  font-size: 300%;
+  font-size: 256%;
   font-weight: bold;
   color: var(--titleCol);
 }
@@ -117,6 +117,7 @@ htemp
 {
   text-align: center;
   line-height: 1;
+  margin: 20px;
   /* padding-top: 32px;
   padding-bottom: 32px; */
 }
